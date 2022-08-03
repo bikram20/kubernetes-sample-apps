@@ -9,7 +9,7 @@ RUN npm install --include=dev
 ENV NODE_ENV=development
 RUN npm run build
 
-FROM node:18.6.0-slim
+FROM node:16-alpine
 RUN npm install http-server -g
 RUN mkdir /public
 WORKDIR /public
