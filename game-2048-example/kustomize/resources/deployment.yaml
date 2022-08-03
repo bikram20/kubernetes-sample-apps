@@ -29,10 +29,10 @@ spec:
             limits:
               cpu: 200m
               memory: 100Mi
-          securityContext:
-            readOnlyRootFilesystem: true
-            runAsNonRoot: true
-            allowPrivilegeEscalation: false
-            capabilities:
-              drop:
-                - all
+          #securityContext:
+          #  readOnlyRootFilesystem: true
+          #  runAsNonRoot: true
+          #  allowPrivilegeEscalation: false
+          #  capabilities:
+          #    drop:
+          #      - all
